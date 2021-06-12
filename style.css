@@ -32,7 +32,7 @@ ul li a:hover {
 }
 .show {
     display: block;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.801);
     border-radius: 8px;
     margin: 10px 0px 0px 40px;
     position: absolute;
@@ -55,7 +55,7 @@ ul li a:hover {
 .navright {
     float: right;
 }
-.navright .icon {
+.navright .hamburger {
     display: none;
 }
 .headbody {
@@ -209,7 +209,7 @@ h4 {
     .header ul li, .btn1, .btn2 {
         display: none;
     }
-    .navright .icon {
+    .navright .hamburger {
         display: inline-block;
     }
     .futurebody, .art, .tools, .footercard {
