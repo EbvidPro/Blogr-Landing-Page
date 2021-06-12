@@ -1,0 +1,264 @@
+body {
+    font-family: 'Overpass', sans-serif !important;
+}
+.header {
+    display: grid;
+    padding: 50px 80px 100px 80px;
+    background-color: hsl(356, 100%, 66%);
+    height: auto;
+    background-image: url('bg-pattern-intro.svg');
+    background-size: 1900px auto;
+    background-repeat: no-repeat;
+    background-position: 40% 40%;
+    color: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 80px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    display: inline-block;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+ul li a:hover {
+    text-decoration: underline
+}
+.dropdown1, .dropdown2, .dropdown3{
+    display: none;
+}
+.show {
+    display: block;
+    background-color: white;
+    border-radius: 8px;
+    margin: 10px 0px 0px 40px;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+}
+.dropdown li {
+    display: block;
+    padding: 20px 50px 12px 20px;
+}
+.dropdown li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.dropdown li a:hover {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+.navright {
+    float: right;
+}
+.navright .icon {
+    display: none;
+}
+.headbody {
+    text-align: center;
+}
+.headbody h1 {
+    font-size: 47px;
+}
+.btn1 {
+    padding: 10px;
+    border-radius: 30px;
+    background: no-repeat;
+    border: none;
+    color: hsl(0, 0%, 100%);
+}
+.btn1:hover, .btn2:hover, .btn3:hover{
+    background: hsl(355, 100%, 74%);
+    cursor: pointer;
+    color: white;
+}
+.btn2 {
+    padding: 8px 18px;
+    background: white;
+    border-radius: 30px;
+    border: none;
+    color: hsl(356, 88%, 60%);
+}
+.btn3 {
+    border: 1px solid white;
+    background: white;
+    border-radius: 35px;
+    padding: 9px 15px 8px 15px;
+    color: hsl(356, 88%, 60%);
+}
+.btn4 {
+    background: none;
+    border: 1px solid white;
+    border-radius: 35px;
+    color: white;
+    padding: 9px 15px 8px 15px;
+    margin-top: 20px;
+}
+.btn4:hover {
+    background: white;
+    border: none;
+    color: hsl(356, 88%, 60%);
+    cursor: pointer;
+}
+.future {
+    margin: 70px 0px 0px 40px;
+}
+.future h2 {
+    text-align: center;
+    font-size: 28px;
+    color: hsl(207, 13%, 34%);
+}
+h3 {
+    color: hsl(207, 13%, 34%);
+    font-size: 20px;
+}
+p {
+    line-height: 1.6;
+}
+.futurebody {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 600px;
+}
+.card {
+    padding: 0px 80px 0px 15px;
+}
+.right {
+    background: url('illustration-editor-desktop.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+.art {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 40% 50%;
+    background: url('bg-pattern-circles.svg');
+    height: 400px;
+    background-color: hsl(237, 17%, 21%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    border-bottom-left-radius: 68px;
+    border-top-right-radius: 68px;
+}
+.art img {
+    padding-left: 60px;
+    margin-top: -70px;
+    width: 100%;
+}
+.artCard {
+    margin-top: 70px;
+    height: 250px;
+    padding: 50px 20px 0px 150px;
+
+}
+.tools {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 100px;
+    height: 700px;
+}
+.toolsLeft {
+    background: url('illustration-laptop-desktop.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.toolsCard {
+    margin-top: 80px;
+    padding: 50px 40px 0px 70px;
+}
+.footer {
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 68px;
+}
+.footercard {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-bottom: 20px;
+}
+.footercard img, .product, .company, .connect {
+    margin: 50px;
+}
+h4 {
+    color: white;
+}
+.footer ul {
+    margin: 0;
+    padding: 0;
+}
+.footer li {
+    display: block;
+    line-height: 2.0;
+}
+.footer li a {
+    text-decoration: none;
+    color: hsl(240, 2%, 79%);
+}
+.footer li a:hover {
+    text-decoration: underline;
+    color: tomato;
+}
+
+@media screen and (Max-width:800px) {
+    .header ul li, .btn1, .btn2 {
+        display: none;
+    }
+    .navright .icon {
+        display: inline-block;
+    }
+    .futurebody, .art, .tools, .footercard {
+        display: block;
+        color: auto;
+        height: auto;
+        text-align: center;
+        margin: auto;
+    }
+    .card {
+        padding: 10px;
+    }
+    .artCard {
+        margin-top: 0px;
+        height: 250px;
+        padding: 20px 20px 0px 30px;
+    }
+    .art img {
+        padding-left: 10px;
+        margin-top: -100px;
+    }
+    .right {
+        background: url('illustration-editor-mobile.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 600px auto;
+        width: 100%;
+    }
+    .toolsLeft {
+        background: url('illustration-laptop-mobile.svg');
+        background-size: 100%;        
+        background-repeat: no-repeat;
+        height: 600px auto;
+    }
+    .toolsCard {
+        padding: 0px 40px 0px 70px;
+    }
+    .displayNav {
+        display: block;
+        background-color: white;
+        color: black;
+        position: relative;
+    }
+    .footercard li {
+        text-align: center;
+        margin: 0;
+        padding: 0%;
+    }
+    
+
+}
+
