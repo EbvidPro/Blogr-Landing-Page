@@ -1,8 +1,4 @@
-body {
-    font-family: 'Overpass', sans-serif !important;
-}
 .header {
-    display: grid;
     padding: 50px 80px 100px 80px;
     background-color: hsl(356, 100%, 66%);
     height: auto;
@@ -62,7 +58,7 @@ ul li a:hover {
     text-align: center;
 }
 .headbody h1 {
-    font-size: 47px;
+    padding-top: 15px;
 }
 .btn1 {
     padding: 10px;
@@ -109,12 +105,10 @@ ul li a:hover {
 }
 .future h2 {
     text-align: center;
-    font-size: 28px;
     color: hsl(207, 13%, 34%);
 }
 h3 {
     color: hsl(207, 13%, 34%);
-    font-size: 20px;
 }
 p {
     line-height: 1.6;
@@ -129,16 +123,17 @@ p {
 }
 .right {
     background: url('illustration-editor-desktop.svg');
-    background-size: 100%;
+    background-size: 80%;
     background-repeat: no-repeat;
     height: 600px;
+    background-position: 70% 50%;
 }
 .art {
     display: grid;
-    margin-top: 30px;
+    margin-top: auto;
     grid-template-columns: 40% 50%;
     background: url('bg-pattern-circles.svg');
-    height: 400px;
+    height: auto;
     background-color: hsl(237, 17%, 21%);
     background-size: cover;
     background-repeat: no-repeat;
@@ -160,7 +155,7 @@ p {
 .tools {
     display: grid;
     grid-template-columns: 50% 50%;
-    margin-top: 100px;
+    margin-top: 50px;
     height: 700px;
 }
 .toolsLeft {
@@ -219,13 +214,16 @@ h4 {
         text-align: center;
         margin: auto;
     }
+    .future {
+        margin: 20px;
+    }
     .card {
         padding: 10px;
     }
     .artCard {
         margin-top: 0px;
-        height: 250px;
-        padding: 20px 20px 0px 30px;
+        height: auto;
+        padding: 20px;
     }
     .art img {
         padding-left: 10px;
@@ -245,7 +243,7 @@ h4 {
         height: 600px auto;
     }
     .toolsCard {
-        padding: 0px 40px 0px 70px;
+        padding: auto;
     }
     .displayNav {
         display: block;
@@ -258,7 +256,10 @@ h4 {
         margin: 0;
         padding: 0%;
     }
-    
-
 }
 
+@media  screen and (Max-width: 500px) {
+    .header {
+        padding: 20px;
+    }
+}
