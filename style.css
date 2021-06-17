@@ -1,265 +1,322 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: overpass, sans-serif;
+  max-width: 2000px;
+}
+
 .header {
-    padding: 50px 80px 100px 80px;
-    background-color: hsl(356, 100%, 66%);
-    height: auto;
-    background-image: url('bg-pattern-intro.svg');
-    background-size: 1900px auto;
-    background-repeat: no-repeat;
-    background-position: 40% 40%;
-    color: hsl(0, 0%, 100%);
-    border-bottom-left-radius: 80px;
+  padding: 50px 80px 100px 80px;
+  background-color: hsl(356, 100%, 66%);
+  height: auto;
+  background-image: url("bg-pattern-intro.svg");
+  background-size: 1900px auto;
+  background-repeat: no-repeat;
+  background-position: 40% 40%;
+  color: hsl(0, 0%, 100%);
+  border-bottom-left-radius: 80px;
+}
+.nav {
+  font-family: ubuntu, sans-serif;
+  width: var(--width-of-section);
 }
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 ul li {
-    display: inline-block;
+  display: inline-block;
 }
 ul li a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 ul li a:hover {
-    text-decoration: underline
+  text-decoration: underline;
 }
-.dropdown1, .dropdown2, .dropdown3{
-    display: none;
+.dropdown1,
+.dropdown2,
+.dropdown3 {
+  display: none;
 }
 .show {
-    display: block;
-    background-color: rgba(255, 255, 255, 0.801);
-    border-radius: 8px;
-    margin: 10px 0px 0px 40px;
-    position: absolute;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+  display: block;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  margin: 10px 0px 0px 40px;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 .dropdown li {
-    display: block;
-    padding: 20px 50px 12px 20px;
+  display: block;
+  padding: 20px 50px 12px 20px;
 }
 .dropdown li a {
-    color: black;
-    text-decoration: none;
-    display: block;
+  color: black;
+  text-decoration: none;
+  display: block;
 }
 .dropdown li a:hover {
-    color: black;
-    font-weight: 700;
-    text-decoration: none;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
 }
 .navright {
-    float: right;
+  float: right;
 }
 .navright .hamburger {
-    display: none;
+  display: none;
 }
 .headbody {
-    text-align: center;
+  text-align: center;
 }
 .headbody h1 {
-    padding-top: 15px;
+  padding-top: 15px;
+  font-size: 3.5rem;
 }
 .btn1 {
-    padding: 10px;
-    border-radius: 30px;
-    background: no-repeat;
-    border: none;
-    color: hsl(0, 0%, 100%);
+  padding: 10px;
+  border-radius: 30px;
+  background: no-repeat;
+  border: none;
+  color: hsl(0, 0%, 100%);
 }
-.btn1:hover, .btn2:hover, .btn3:hover{
-    background: hsl(355, 100%, 74%);
-    cursor: pointer;
-    color: white;
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+  background: hsl(355, 100%, 74%);
+  cursor: pointer;
+  color: white;
 }
 .btn2 {
-    padding: 8px 18px;
-    background: white;
-    border-radius: 30px;
-    border: none;
-    color: hsl(356, 88%, 60%);
+  padding: 8px 18px;
+  background: white;
+  border-radius: 30px;
+  border: none;
+  color: hsl(356, 88%, 60%);
 }
 .btn3 {
-    border: 1px solid white;
-    background: white;
-    border-radius: 35px;
-    padding: 9px 15px 8px 15px;
-    color: hsl(356, 88%, 60%);
+  border: 1px solid white;
+  background: white;
+  border-radius: 35px;
+  padding: 9px 15px 8px 15px;
+  color: hsl(356, 88%, 60%);
 }
 .btn4 {
-    background: none;
-    border: 1px solid white;
-    border-radius: 35px;
-    color: white;
-    padding: 9px 15px 8px 15px;
-    margin-top: 20px;
+  background: none;
+  border: 1px solid white;
+  border-radius: 35px;
+  color: white;
+  padding: 9px 15px 8px 15px;
+  margin-top: 20px;
 }
 .btn4:hover {
-    background: white;
-    border: none;
-    color: hsl(356, 88%, 60%);
-    cursor: pointer;
+  background: white;
+  border: none;
+  color: hsl(356, 88%, 60%);
+  cursor: pointer;
 }
 .future {
-    margin: 70px 0px 0px 40px;
+  margin: 70px 0px 0px 40px;
 }
 .future h2 {
-    text-align: center;
-    color: hsl(207, 13%, 34%);
+  text-align: center;
+  color: hsl(207, 13%, 34%);
 }
 h3 {
-    color: hsl(207, 13%, 34%);
+  color: hsl(207, 13%, 34%);
 }
 p {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 .futurebody {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 600px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: auto;
 }
 .card {
-    padding: 0px 80px 0px 15px;
+  padding: 30px 80px 0px 85px;
 }
 .right {
-    background: url('illustration-editor-desktop.svg');
-    background-size: 80%;
-    background-repeat: no-repeat;
-    height: 600px;
-    background-position: 70% 50%;
+  background: url("illustration-editor-desktop.svg");
+  background-size: 110%;
+  position: relative;
+  top: -3rem;
+  left: 23%;
+  background-repeat: no-repeat;
+  height: 700px;
 }
 .art {
-    display: grid;
-    margin-top: auto;
-    grid-template-columns: 40% 50%;
-    background: url('bg-pattern-circles.svg');
-    height: auto;
-    background-color: hsl(237, 17%, 21%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    border-bottom-left-radius: 68px;
-    border-top-right-radius: 68px;
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: 40% 50%;
+  background: url("bg-pattern-circles.svg");
+  height: 350px;
+  background-color: hsl(237, 17%, 21%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  border-bottom-left-radius: 68px;
+  border-top-right-radius: 68px;
 }
 .art img {
-    padding-left: 60px;
-    margin-top: -70px;
-    width: 100%;
+  padding-left: 60px;
+  margin-top: -70px;
+  width: 100%;
 }
 .artCard {
-    margin-top: 70px;
-    height: 250px;
-    padding: 50px 20px 0px 150px;
-
+  margin-top: 30px;
+  height: 250px;
+  padding: 50px 20px 0px 150px;
 }
 .tools {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-top: 50px;
-    height: 700px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 70px;
+  height: 700px;
 }
 .toolsLeft {
-    background: url('illustration-laptop-desktop.svg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 500px;
+  background: url("illustration-laptop-desktop.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 500px;
 }
 .toolsCard {
-    margin-top: 80px;
-    padding: 50px 40px 0px 70px;
+  margin-top: 80px;
+  padding: 50px 40px 0px 70px;
 }
 .footer {
-    background-color: hsl(240, 10%, 16%);
-    border-top-right-radius: 68px;
+  background-color: hsl(240, 10%, 16%);
+  border-top-right-radius: 68px;
 }
 .footercard {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding-bottom: 20px;
 }
-.footercard img, .product, .company, .connect {
-    margin: 50px;
+.footercard img,
+.product,
+.company,
+.connect {
+  margin: 50px;
 }
 h4 {
-    color: white;
+  color: white;
 }
 .footer ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .footer li {
-    display: block;
-    line-height: 2.0;
+  display: block;
+  line-height: 2;
 }
 .footer li a {
-    text-decoration: none;
-    color: hsl(240, 2%, 79%);
+  text-decoration: none;
+  color: hsl(240, 2%, 79%);
 }
 .footer li a:hover {
-    text-decoration: underline;
-    color: tomato;
+  text-decoration: underline;
+  color: tomato;
+}
+.attribution {
+  background-image: linear-gradient(
+    90deg,
+    var(--Very-light-red),
+    var(--Light-red)
+  );
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(243, 132, 59);
 }
 
-@media screen and (Max-width:800px) {
-    .header ul li, .btn1, .btn2 {
-        display: none;
-    }
-    .navright .hamburger {
-        display: inline-block;
-    }
-    .futurebody, .art, .tools, .footercard {
-        display: block;
-        color: auto;
-        height: auto;
-        text-align: center;
-        margin: auto;
-    }
-    .future {
-        margin: 20px;
-    }
-    .card {
-        padding: 10px;
-    }
-    .artCard {
-        margin-top: 0px;
-        height: auto;
-        padding: 20px;
-    }
-    .art img {
-        padding-left: 10px;
-        margin-top: -100px;
-    }
-    .right {
-        background: url('illustration-editor-mobile.svg');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        height: 600px auto;
-        width: 100%;
-    }
-    .toolsLeft {
-        background: url('illustration-laptop-mobile.svg');
-        background-size: 100%;        
-        background-repeat: no-repeat;
-        height: 600px auto;
-    }
-    .toolsCard {
-        padding: auto;
-    }
-    .displayNav {
-        display: block;
-        background-color: white;
-        color: black;
-        position: relative;
-    }
-    .footercard li {
-        text-align: center;
-        margin: 0;
-        padding: 0%;
-    }
+.attribution a {
+  text-decoration: none;
+  color: var(--Very-dark-blue-headings);
+  font-weight: bolder;
 }
 
-@media  screen and (Max-width: 500px) {
-    .header {
-        padding: 20px;
-    }
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  .header ul li,
+  .btn1,
+  .btn2 {
+    display: none;
+  }
+  .navright .hamburger {
+    display: inline-block;
+  }
+  .headbody h1 {
+    padding-top: 15px;
+    font-size: 2rem;
+  }
+  .futurebody,
+  .art,
+  .tools,
+  .footercard {
+    display: block;
+    color: auto;
+    height: auto;
+    text-align: center;
+    margin: auto;
+  }
+  .future {
+    margin: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, max-content);
+  }
+  .card {
+    padding: 10px;
+  }
+  .artCard {
+    margin-top: 0px;
+    height: auto;
+    padding: 20px;
+  }
+  .art img {
+    padding-left: 10px;
+    margin-top: -100px;
+  }
+  .right {
+    background: url("illustration-editor-mobile.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 600px auto;
+    width: 90%;
+    position: relative;
+    top: 0;
+    left: 5vw;
+  }
+  .toolsLeft {
+    background: url("illustration-laptop-mobile.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 600px auto;
+  }
+  .toolsCard {
+    padding: auto;
+  }
+  .displayNav {
+    display: block;
+    background-color: white;
+    color: black;
+    position: relative;
+  }
+  .footercard li {
+    text-align: center;
+    margin: 0;
+    padding: 0%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    padding: 20px;
+  }
 }
