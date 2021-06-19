@@ -22,7 +22,15 @@ window.onclick = function(event) {
     }
 }
 
-function openNav() {
-    
-}
-
+let hamburger = document.querySelector('.hamburg');
+hamburger.addEventListener('click', (e) => {
+    let attribute = hamburger.getAttribute('src');
+    let navigationPanel = document.querySelector('.nav');
+    if (attribute == "images/icon-hamburger.svg"){
+        hamburger.setAttribute("src","images/icon-close.svg")
+        navigationPanel.style.display = "grid"
+    } else {
+        hamburger.setAttribute("src", "images/icon-hamburger.svg")
+        navigationPanel.style.display = "none";
+    }
+})

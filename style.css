@@ -6,7 +6,9 @@ body {
   padding: 0;
   font-family: overpass, sans-serif;
 }
-
+.logo {
+  position: absolute;
+}
 .header {
   padding: 50px 80px 100px 80px;
   background-color: hsl(356, 100%, 66%);
@@ -21,9 +23,10 @@ body {
 .nav {
   font-family: ubuntu, sans-serif;
   width: var(--width-of-section);
+  position: relative;
 }
 ul {
-  margin: 0;
+  margin: 15px 0px 0px 4.5rem;
   padding: 0;
 }
 ul li {
@@ -66,8 +69,11 @@ ul li a:hover {
 .navright {
   float: right;
 }
-.navright .hamburger {
+.hamburg {
   display: none;
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
 }
 .headbody {
   text-align: center;
@@ -245,19 +251,20 @@ h4 {
 }
 
 @media screen and (max-width: 800px) {
-  .header ul li,
-  .btn1,
-  .btn2 {
+  .nav {
     display: none;
   }
-  .navright .hamburger {
+  .hamburg {
     display: inline-block;
+  }
+  .hamburg:hover {
+    cursor: pointer;
   }
   .header {
     padding: 40px;
   }
   .headbody h1 {
-    padding-top: 15px;
+    padding-top: 3rem;
     font-size: 2rem;
   }
   .futurebody,
@@ -331,6 +338,9 @@ h4 {
 @media screen and (max-width: 350px) {
   .header {
     padding: 20px;
+  }
+  .hamburg {
+    top: 2rem;
   }
   .right,
   .toolsLeft {
