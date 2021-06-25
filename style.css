@@ -68,6 +68,7 @@ ul li a:hover {
 }
 .navright {
   float: right;
+  margin-top: -12px;
 }
 .hamburg {
   display: none;
@@ -153,7 +154,7 @@ p {
   top: -3rem;
   background-position-x: 12rem;
   background-repeat: no-repeat;
-  min-height: 620px;
+  height: 600px;
 }
 .art {
   display: grid;
@@ -249,10 +250,26 @@ h4 {
 .attribution a:hover {
   text-decoration: underline;
 }
+@media screen and (max-width: 1200px) {
+  .card {
+    padding: 30px 80px 0px 40px;
+  }
+  .right {
+    background-size: 120%;
+    background-position-x: 5rem;
+  }
+  .toolsLeft {
+    background-size: 120%;
+    right: 8rem;
+  }
+}
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .nav {
     display: none;
+    grid-template-columns: auto;
+    background-color: white;
+    color: black;
   }
   .hamburg {
     display: inline-block;
@@ -277,11 +294,26 @@ h4 {
     text-align: center;
     margin: auto;
   }
+  .futurebody {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column-reverse;
+  }
   .future {
     margin: 20px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, max-content);
     grid-auto-flow: dense;
+  }
+  .right {
+    background: url("illustration-editor-mobile.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-x: 0;
+    position: inherit;
+    top: 0;
+    left: 0;
   }
   .card {
     padding: 10px;
@@ -295,17 +327,6 @@ h4 {
     padding-left: 10px;
     margin-top: -100px;
   }
-  .right {
-    background: url("illustration-editor-mobile.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 600px;
-    width: 100%;
-    background-position-x: 0;
-    position: relative;
-    top: 0;
-    left: 0;
-  }
   .toolsLeft {
     background: url("illustration-laptop-mobile.svg");
     background-size: 100%;
@@ -315,7 +336,9 @@ h4 {
     right: 0;
   }
   .toolsCard {
+    position: relative;
     padding: 20px;
+    margin-top: -6rem;
   }
   .displayNav {
     display: block;
@@ -332,6 +355,9 @@ h4 {
 @media screen and (max-width: 500px) {
   .toolsCard {
     margin-top: -17rem;
+  }
+  .right {
+    height: 400px;
   }
 }
 
