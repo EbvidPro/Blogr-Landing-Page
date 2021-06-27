@@ -5,7 +5,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: overpass, sans-serif;
-  max-width: 2000px;
 }
 .logo {
   position: absolute;
