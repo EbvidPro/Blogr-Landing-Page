@@ -86,7 +86,7 @@ ul li a:hover {
   font-size: 3.5rem;
 }
 .btn1 {
-  padding: 8px 18px;
+  padding: 8px;
   border-radius: 30px;
   background: no-repeat;
   border: none;
@@ -284,6 +284,8 @@ h4 {
   }
   .navright {
     text-align: center;
+    display: grid;
+    margin-top: 30px;
     padding-bottom: 1.2rem;
   }
   ul {
@@ -306,9 +308,21 @@ h4 {
     left: 0;
     top: 0;
   }
-  .btn1 {
-    margin: 1.7rem;
+  .btn1,
+  .btn2 {
+    margin: 0rem 15rem 1rem 15rem;
     font-weight: 700;
+  }
+  .btn1 {
+    color: black;
+  }
+  .btn2 {
+    background: hsl(355, 100%, 74%);
+    cursor: pointer;
+    color: white;
+  }
+  .btn2:hover {
+    opacity: 0.7;
   }
   .product,
   .company,
@@ -321,6 +335,9 @@ h4 {
     padding: 0.5rem;
     margin: 1rem 0;
     font-weight: 700;
+  }
+  span img {
+    background: url("icon-arrow-dark.svg");
   }
   .hamburg {
     display: inline-block;
