@@ -22,5 +22,5 @@ function menu() {
         }else{
             hamburger.setAttribute("src", "icon-hamburger.svg")
             navigationPanel.style.display = "none";
-        }
+        };
 };

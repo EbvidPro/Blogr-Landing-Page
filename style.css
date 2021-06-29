@@ -265,18 +265,19 @@ h4 {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .nav {
     display: none;
-    text-align: center;
+    text-align: center !important;
     grid-template-columns: 1fr;
     grid-template-rows: max-content max-content;
     width: 90%;
     height: max-content;
     background: White;
+    justify-content: center;
     border-radius: 6px;
     padding: 1rem;
-    position: absolute;
+    position: relative;
     top: 7rem;
     box-shadow: 0 1rem 10rem rgba(0 0 0/0.2), 0 1rem 4rem rgba(0 0 0/0.2);
     z-index: 999;
@@ -302,8 +303,10 @@ h4 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 90%;
-    margin: 1rem auto;
+    width: max-content;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 30px;
     left: 0;
     top: 0;
   }
@@ -328,11 +331,12 @@ h4 {
   .connect {
     color: var(--Very-dark-gray-blue);
     display: block;
+    position: relative;
     text-align: center;
     color: var(--Very-dark-desaturated-blue);
     opacity: 1;
     padding: 0.5rem;
-    margin: 1rem 0;
+    margin: 1rem;
     font-weight: 700;
   }
   span img {
